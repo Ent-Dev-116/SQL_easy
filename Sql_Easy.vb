@@ -20,10 +20,10 @@ Public class SqlEasy
             String As id,
             String As Password,
             String As Database)
-        this.Data_Source = Sourse;
-        this.User_ID = id;
-        this.Password = Password;
-        this.Inital_Catalog = Database;
+        Me.Data_Source = Sourse;
+        Me.User_ID = id;
+        Me.Password = Password;
+        Me.Inital_Catalog = Database;
     End Sub
 
     ' SQL文を実行するメソッド(set)
