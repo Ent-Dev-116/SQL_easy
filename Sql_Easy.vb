@@ -8,7 +8,7 @@ Public class Sql
     ' 例1:DBへ入力する場合
     ' sql.Set("INSERT INTO table_name (column1, column2) VALUES (value1, value2)")
     ' 例2:DBから取得する場合
-    ' sql.Get("SELECT * FROM table_name",Columns（列を指定する配列）)
+    ' Dim dt As DataTable = sql.Get("SELECT column1, column2 FROM table_name", New String() {"column1", "column2"})
 
     ' 接続用の文字列
     Data_Source As String;
@@ -43,8 +43,8 @@ Public class Sql
     End Sub
 
     ' SQL文を実行するメソッド(get)
-    Sub Get(String As Sql,
-            String() As Columns)
+    Function Get(String As Sql,
+            String() As Columns) As DataTable
         Dim cn As New SqlClient.SqlConnection
         cn.ConnectionString = "Data Source=" & this.Data_Source & ";Initial Catalog=" & this.Inital_Catalog & ";User ID=" & this.User_ID & ";Password=" & this.Password & ";"
         
@@ -72,5 +72,7 @@ Public class Sql
         dr.Close()
         cn.Close()
         cn.Dispose()
-    End Sub
+
+        Return dtData
+    End Function
 End class
