@@ -1,5 +1,5 @@
-Public class Sql
-    ' このクラスは、SQL文を簡単に実行するための物です。
+Public class SqlEasy
+    ' SqlEasyクラスは、SQL Serverに接続してSQL文を実行するためのクラスです。
     ' 使い方は、Sqlクラスのインスタンスを作成し、Executeメソッドを呼び出すだけです。 
     
     ' 初期化は接続プロパティを設定するだけでOKです。
