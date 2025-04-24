@@ -75,4 +75,5 @@ Public class SqlEasy
 
         Return dtData
     End Function
+
 End class
