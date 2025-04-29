@@ -20,9 +20,9 @@ public class Sql_Easy
         string TableName,
         List<string> Column,
         string eMessage = "default",
-        List<string>? newValue = default,
+        List<Object>? newValue = default,
         List<string>? whereColumn = default,
-        List<string>? whereValue = default
+        List<Object>? whereValue = default
         )
     {
         try
