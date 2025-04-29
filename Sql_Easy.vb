@@ -29,7 +29,7 @@ Public Class SqlEasy
     End Sub
 
     ' SQL文を実行するメソッド(set)
-    Function SetDB(Sql As String) As Boolean
+    Public Function SetDB(Sql As String) As Boolean
         Try
             Dim cn As New Microsoft.Data.SqlClient.SqlConnection
             cn.ConnectionString = "Data Source=" & Me.Data_Source & ";Initial Catalog=" & Me.Inital_Catalog & ";User ID=" & Me.User_ID & ";Password=" & Me.Password & ";"
