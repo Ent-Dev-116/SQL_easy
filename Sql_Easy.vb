@@ -6,10 +6,12 @@ Public Class SqlEasy
     ' また、本文には列の配列を用意しておいてください。引数として使用します。
 
     ' 例1:DBへ入力する場合
-    ' sql.Set("INSERT INTO table_name (column1, column2) VALUES (value1, value2)")
+    ' sql.SetDB("INSERT INTO table_name (column1, column2) VALUES (value1, value2)")
     ' 例2:DBから取得する場合
-    ' Dim dt As DataTable = sql.Get("SELECT column1, column2 FROM table_name", New String() {"column1", "column2"})
+    ' Dim dt As DataTable = sql.GetDB("SELECT column1, column2 FROM table_name", New String() {"column1", "column2"})
 
+    '＜ちょっとした小ネタ＞このまま使用できますが、この関数の末尾に文字列としてエラーコードを自分で記述すると、失敗時にその文章を表示します。
+    
     ' 接続用の文字列
     Private Data_Source As String
     Private User_ID As String
