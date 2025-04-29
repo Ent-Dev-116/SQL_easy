@@ -83,9 +83,8 @@ namespace Sql_Easy
                                 sql += ", ";
                             }
                         }
-                    }
-                    else if (sqlType == "DELETE")
-                    {
+                    }else{
+                        return null;
                     }
                     if (whereColumn != null)
                     {
