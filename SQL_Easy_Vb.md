@@ -18,7 +18,7 @@
 #### 構文例
 ###### ※このMDファイル内では「samp」を名前にしてますが、任意の名前でいいです！<br> ※下記のダブルクォーテーションの中に記述されているものは例というかダミーです。<br>　ダブルクォーテーション内は変えて使用してね！
 ```test.vb
-    Dim samp As New SqlEasy("Source", "UserID", "password", "DataBaseName");
+    Dim samp As New SqlEasy("Source", "UserID", "password", "DataBaseName")
    ```
 
 ### データベース干渉構文
@@ -34,7 +34,7 @@
 #### 使用例
 ##### ※sampはそのまま使ってるだけで、自分で定義したのを使ってね！<br>※SetDB内のテキストを自分の\[INSERT\]\[UPDATE\]のコードに変えると動くようになってるよ！
 ```test.vb
-    Dim samp As New SqlEasy("Source", "UserID", "password", "DataBaseName");
+    Dim samp As New SqlEasy("Source", "UserID", "password", "DataBaseName")
     samp.SetDB("INSERT INTO TestTbl(Name,Pow,Rarity) VALUES ('saikyousan1gou',100,'UR')")
    ```
 
@@ -52,7 +52,7 @@
 #### 使用例
 ##### ※sampはそのまま使ってるだけで、自分で定義したのを使ってね！<br>※GetDB内のテキストを自分の\[SELECT\]のコードに変えると動くようになってるよ！
 ```test.vb
-    Dim samp As New SqlEasy("Source", "UserID", "password", "DataBaseName");
+    Dim samp As New SqlEasy("Source", "UserID", "password", "DataBaseName")
     samp.GetDB("SELECT column1, column2 FROM testTbl",New String(){"column1","column2"})
    ```
 
